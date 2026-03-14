@@ -19,7 +19,7 @@ function PredictPage({ isAdminPage }){
   // ✅ Check Admin Session
   useEffect(() => {
     axios
-      .get("http://localhost:5000/admin/check", { withCredentials: true })
+      .get("http://192.168.1.7:5000/admin/check", { withCredentials: true })
       .then(() => setIsAdmin(true))
       .catch(() => setIsAdmin(false));
   }, []);
@@ -55,7 +55,7 @@ function PredictPage({ isAdminPage }){
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/predict",
+        "http://192.168.1.7:5000/predict",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -101,7 +101,7 @@ navigate("/result",{state:resultData});
       setLoadingQuickScan(true);
 
       const res = await axios.post(
-        "http://localhost:5000/predict-scan",
+        "http://192.168.1.7:5000/predict-scan",
         {},
         { withCredentials: true }
       );
