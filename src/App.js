@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminRoute from "./AdminRoute";
 import Navbar from "./Navbar";
 import About from "./About";
-
+import BloodGroups from "./pages/BloodGroups";
 import UserSignup from "./UserSignup";
 import UserLogin from "./UserLogin";
 import UserDashboard from "./UserDashboard";
@@ -28,6 +28,9 @@ function App() {
         {/* HOME */}
         <Route path="/" element={<PredictPage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blood-groups" element={<BloodGroups />} />
+        <Route path="/admin/blood-groups" element={<BloodGroups />} />
+
         <Route path="/admin/about" element={<About />} />
         <Route path="/result" element={<Result />} />
   {/* ADMIN ROOT ROUTE */}

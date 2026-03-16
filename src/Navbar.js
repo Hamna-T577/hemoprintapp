@@ -64,6 +64,8 @@ return (
         <Link to="/admin/dashboard">Dashboard</Link>
 
     <Link to="/admin/about">About</Link>
+    <Link to="/admin/blood-groups">Blood Groups</Link>
+    
 
 {isAdmin && (
   <Link to="/admin/results">Results</Link>
@@ -81,6 +83,7 @@ return (
         <>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
+          <Link to="/blood-groups">Blood Groups</Link>
 
           {isUser ? (
             <>

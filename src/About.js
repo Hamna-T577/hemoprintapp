@@ -14,11 +14,7 @@ function About() {
        
       </section>
       
-      <img
-          src="/fingerprint1.png"
-          alt="fingerprint"
-          className="about-fingerprint"
-        />
+     
       {/* ABOUT CONTENT */}
       <section className="about-content">
 

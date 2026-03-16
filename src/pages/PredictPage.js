@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../ScanUpload.css";
-import heroImage from "../assets/result-illustration.png";
+import heroImage from "../assets/Gemini1.png";
 
 
 function PredictPage({ isAdminPage }){
@@ -130,26 +130,28 @@ navigate("/result",{state:resultData});
     <div className="page-wrapper">
 
       {/* HERO */}
-      <section className="hero">
-        <div className="floating-logo">
-          <img src="/myico.png" alt="Logo" className="nav-logo" />
-        </div>
+      <section
+  className="hero"
+  style={{ backgroundImage: `url(${heroImage})` }}
+>
+  <div className="hero-overlay"></div>
 
-        <div className="hero-text">
-          <h1>
-            AI Based <span>Blood Group Detection</span>
-          </h1>
-          <p>
-            {isAdmin
-              ? "Use Quick Scan for instant admin detection"
-              : "Upload your fingerprint for prediction"}
-          </p>
-        </div>
+  <div className="floating-logo">
+    <img src="/myiconnn.png" alt="Logo" className="nav-logo" />
+  </div>
 
-        <div className="hero-image">
-          <img src={heroImage} alt="Bloodgroup Illustration" />
-        </div>
-      </section>
+  <div className="hero-text">
+    <h1>
+      AI Based <span>Blood Group Detection</span>
+    </h1>
+
+    <p>
+      {isAdmin
+        ? "Use Quick Scan for instant admin detection"
+        : "Upload your fingerprint for prediction"}
+    </p>
+  </div>
+</section>
 
       {/* ✅ WHY CHOOSE HEMOPRINT (NOW IN CORRECT POSITION) */}
       <section className="info-section">

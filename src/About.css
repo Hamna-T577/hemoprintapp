@@ -6,25 +6,80 @@
   min-height: 100vh;
 }
 
-/* HERO SECTION *//* HERO SECTION */
+
+
+
+
+
 /* HERO SECTION */
 .about-hero {
-  padding: 120px 10%;
-  background: #501606;
-  color: white;
-  text-align: center;
+ position: relative;
+  height: 350px;
+  background: url("/public/Geminiabout.png") center/cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: flex-start;   /* move content to left */
+  text-align: left;          /* left align text */
+
+  padding-left: 120px;       /* space from left side */
+
+  color: #ffffff;
+  overflow: hidden;
 }
 
-/* Hero Text */
-.about-hero h1 {
-  font-size: 44px;
-  margin-bottom: 15px;
+/* Dark overlay to reduce brightness */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* controls brightness */
 }
 
+/* Keep text above overlay */
+.about-hero h1,
 .about-hero p {
-  font-size: 18px;
-  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+  
 }
+
+.about-hero h1{
+  font-size: 42px;
+  margin-bottom: 10px;
+  
+}
+
+.about-hero p{
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FINGERPRINT BELOW HERO */
 .fingerprint-section {
 

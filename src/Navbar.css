@@ -37,7 +37,7 @@
   align-items: center;
   gap: 30px;
   margin-left: auto;
-  color: #efedec;
+  color: white;
 }
 
 /* NAV LINKS */
@@ -45,7 +45,7 @@
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
-  color: #fbf9f9;
+  color: white;
   transition: all 0.3s ease;
   position: relative;
 }
